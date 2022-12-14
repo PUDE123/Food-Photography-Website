@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+*{
+  box-sizing:border-box;
+}
+html, body{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+ul#navbar{
+  background: rgba(242,242,242, 0.22);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.6px);
+-webkit-backdrop-filter: blur(5.6px);
+border: 1px solid rgba(255, 255, 255, 0.12);
+  padding:1em 5em 1em 5em;
+  margin:0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1;
+  display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li#nav-logo img{
+  width:30px;
+  height:30px;
+  
+  
+}
+ul#navbar li#nav-logo{
+  display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:auto;
+}
+ul#navbar li#nav-logo a{
+  margin-left:10px;
+  font-size:20px;
+  font-family: Lobster, cursive;
+  font-weight: bold;
+ color:#222;
+}
+ul#navbar li.nav-menu{ 
+    list-style-type: none;
+    margin-right:3em;
+    display:block;
+   }
+ul#navbar li#nav-logo{
+  list-style-type: none;
+}
+ul#navbar li.nav-menu a{
+  
+    color:#222;
+    text-decoration: none;
+}
+ul#navbar li.nav-menu a:hover{
+    font-weight: bold;
+}
+
+
+/*hamburger icon for mobile*/
+ul#navbar span.menu-btn{
+  font-size: 20px;
+  font-weight: bolder;
+  color:#222;
+  cursor: pointer;
+  display:none;
+}
+div.sideNav{
+  background-color: white;
+  height:100%;
+position: fixed;
+width:0%;
+top:0;
+z-index:1;
+right:0;
+overflow-x: hidden;
+overflow-y: scroll;
+padding-top:60px;
+transition: all 0.5s ease;
+display:none;
+}
+div.sideNav a{
+  text-decoration: none;
+  padding:8px 8px 8px 40px;
+  color:rgb(255,82,82);
+  display:block;
+  transition: all 0.3s ease;
+  margin-bottom: 2em;
+  line-height:2em;
+}
+div.sideNav a:hover{
+  background-color:rgb(255,82,82) ;
+  color:#fff;
+}
+div.sideNav a.closeBtn{
+  position: absolute;
+  cursor: pointer;
+  top:10px;
+  right:25px;
+  font-size: 20px;
+  margin-left:50px;
+}
+
+/*navbar end*/
+
+
+
+
+/*hero start*/
+div#home{
+ 
+  width:100%;
+  height:auto;
+  padding:10em;
+  background-image:url("images/food-bg.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+ div#home h1{
+  text-align:left;
+  color:whitesmoke;
+  font-size: 3em;
+   text-shadow: 2px 2px 6px   rgba(0,0,0,0.3);
+  font-family: Lobster, cursive;
+  margin:3% auto;
+}
+div#home p{
+  color:white;
+    font-size: 18px;
+  }
+div#home a{
+  margin-top:3%;
+  padding:1em;
+  width:50%;
+   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  display: block;
+  text-align: center;
+  border-radius:10px;
+    background-color: rgb(255,82, 82);
+    transition:0.7s ease;
+    text-decoration: none;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  font-size:18px;
+
+}
+div#home a:hover{
+  background-color: white;
+  color:rgb(255,82,82);
+}
+
+
+/*hero end*/
+
+/*about start*/
+
+div#about{
+  
+    padding:2em 5em;
+}
+div.about-contain {
+  background: transparent;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom:2px solid rgb(255,82,82);
+      box-shadow: 5px 1.5px 2px 3px rgba(0,0,0,0.05);
+    border-top-left-radius:50px;
+     border-bottom-left-radius:50px;
+       border-bottom-right-radius:20%;
+    border-left:2px solid rgb(255,82,82);
+}
+
+
+div.about-text h4 img.camera-icon{
+  width:80px;
+  height:80px;
+  margin-left: 12em;
+animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    
+  }
+}
+
+ 
+div.about-text{
+  
+  margin-left: 5em;
+  padding:3em;
+    
+}
+div.about-text p.heading{
+  font-size: 30px;
+  font-family: Lobster, cursive;
+}
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+    PORTFOLIO
+*/
+
+div#portfolio{
+  margin-top: 5em;
+   padding:2em 5em;
+   background: rgba(245,245,245,0.5);
+}
+div#portfolio h1{
+  text-align: center;
+}
+div.image-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+  align-items: stretch;
+  
+ }
+  div.image-grid img {
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+   transition: all 0.5s ease;
+}
+div.image-grid img:hover{
+transform: translate(0, -16px);
+cursor:pointer;
+}
+
+div.gallery{
+  margin-top:5em;
+}
+div.gallery hr{
+  background-color: rgb(255,82,82);
+  border:none;
+    height:2px;
+    border-radius:20px;
+  
+}
+div.gallery h1{
+  font-family: Lobster, cursive;
+  letter-spacing: 3px;
+}
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+    BLOG SECTION
+
+*/
+
+
+
+div#blog{
+  margin-top:5em;
+    padding:2em 5em;
+}
+div#blog div.image-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+  align-items:center;
+ 
+  }
+div#blog-posts h1{
+  text-align: center;
+  background: rgb(255,82,82);
+  padding:10px;
+  color:white;
+  border-radius:30px;
+  border-top: 2px solid white;
+    font-family: Lobster, cursive;
+    letter-spacing: 3px;
+}
+
+div.img-ctnr{
+  text-align: center;
+}
+div.img-ctnr img{
+  margin-bottom:1em;
+}
+div.img-ctnr span{
+  
+  color:#888;
+
+}
+div.img-ctnr p{
+  word-spacing:1em;
+  font-size: 13px;
+  background: whitesmoke;
+  padding:5px;
+  border-radius: 3px;
+  color:#999;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+    CONTACT SECTION
+*/
+div#contact{
+  margin-top:5em;
+  padding:1em 5em;
+  background: rgba(245,245,245,0.5);
+}
+div.contact-intro{
+  text-align: center;
+  padding-top:2em;
+}
+
+div.contact-intro p{
+  font-family: Lobster, cursive;
+  font-size: 25px;
+  letter-spacing:3px;
+}
+div.contact-form-details{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+div.contact-form-details div.contact-image img{
+  width:100%;
+  height:auto;
+}
+div.contact-image{
+
+    margin-right:2em;
+}
+div.contact-form{
+  background: white;
+   padding:1em;
+  max-width:100%;
+  height:auto;
+}
+div.contact-form-socials a img{
+  width:20px;
+  height:20px;
+     transition:all 0.3 ease;
+}
+div.contact-form-socials a{
+  margin-right:2em;
+  
+  
+}
+div.contact-form-socials a img:hover{
+  width:23px;
+  height:23px;
+}
+div.contact-form-personal-details span{
+   display:block;
+   line-height: 2em;
+   color:#888;
+   font-size:13px;
+}
+input, textarea{
+  padding:10px;
+  font-family: "Poppins", sans-serif;
+  border:1px solid #e5e5e5;
+  outline:none;
+  width:200px;
+  border-radius:5px;
+  color:#888;
+  box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+  -moz-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+  -webkit-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+}
+textarea{
+  width:400px;
+  height:150px;
+  max-width:400px;
+  line-height: 20px;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus{
+  border:1px solid rgb(255,82,82);
+}
+p.submit input{
+  color:white;
+  background-color: rgb(255,82,82);
+  transition: all 0.2s ease;
+}
+p.submit input:hover, p.submit input:focus{
+  border:1px solid rgb(255,82,82);
+  background-color:white;
+  color:rgb(255,82,82);
+  cursor: pointer;
+  -moz-cursor:pointer;
+  -o-cursor:pointer;
+  -webkit-cursor:pointer;
+}
+
+
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+    FOOTER SECTION
+*/
+div.footer{
+  display:flex;
+  justify-content: center;
+  background-color: #222;
+  color:white;
+  padding:2px 5em;
+  
+}
+div.footer div.copyright-text{
+  margin-right: auto;
+}
+div.footer a{
+  color:rgb(255,82,82);
+  
+  font-weight: bold;
+  text-decoration: none;
+}
+
+div.footer a:hover{
+  text-decoration: underline;
+}
+
+
+/*styles for button at bottom of the page start*/
+.fixedButton{
+            position: fixed;
+            bottom: 0px;
+            right: 0px; 
+            padding: 20px;
+            text-decoration: none;
+        }
+        .roundedFixedBtn{
+          height: 60px;
+          line-height: 80px;  
+          width: 60px;  
+          font-size: 2em;
+          font-weight: bold;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: white;
+          box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+          color: rgb(255,82,82);
+          text-align: center;
+          border:2px solid rgb(255,82,82);
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .roundedFixedBtn:hover, .roundedFixedBtn:focus{
+           background-color: rgb(255,82,82);
+          
+          color: white;
+        }
+/*styles for button at bottom of the page end*/
+
+
+
+
+
+
+
+
+@media (max-width:1024px){
+ 
+div.about-contain{
+  flex-direction: column;
+}
+div.about-text{ 
+  margin-left: 0em; 
+}
+}
+
+@media (max-width:900px){
+
+ul#navbar{
+  padding:1em 3em 1em 3em;
+}
+ul#navbar span.menu-btn{
+  display:block;
+}
+ul#navbar li.nav-menu{
+  display:none;
+}
+div.sideNav{
+  display:block;
+}
+
+
+div#home h1{
+ 
+  font-size: 2.3em;
+  
+}
+div#home a{
+  width:80%;
+  padding:15px;
+
+}
+ div#about{
+  
+    padding:2em ;
+  }
+  div#portfolio{
+  padding: 2em;
+}
+  div#blog{
+  margin-top:3.5em;
+    padding:2em;
+}
+div#contact{
+  padding:1em 2em;
+}
+div.contact-form-details{
+  flex-direction: column;
+}
+div.contact-image{
+  
+    margin-right:0em;
+}
+div.contact-form{
+  
+  width:100%;
+  height:auto;
+}
+div.contact-form-details div.contact-image img{
+  width:100%;
+  height:500px;
+}
+div.footer{
+  flex-direction: column;
+  padding:0em 2em;
+}
+div.footer div.copyright-text{
+  display: block;
+  margin: 0 auto;
+}
+div.footer div.made-by-text{
+  display: block;
+  margin: 0 auto;
+}
+}
+@media(max-width:600px){
+  div#home{
+    padding:10em 4em;
+  }
+  div#home h1{
+ 
+  font-size: 1.8em;
+  
+}
+div#home a{
+  width:80%;
+  padding:10px;
+
+}
+div.contact-intro p{
+  font-size:18px;
+  }
+textarea{
+  width:300px;
+  
+}
+}
+@media (max-width: 436px){
+  body{
+    overflow-x: hidden;
+  }
+  }
+@media (max-width: 400px){
+  ul#navbar{
+    padding:1em 2em;
+  }
+  div#home{
+    padding:8em 2em;
+  }
+  div#home h1{
+ 
+  font-size: 1.5em;
+  
+}
+div#home a{
+  width:100%;
+  padding:10px;
+
+}
+div#about{
+  
+    padding:1em ;
+  }
+  div#portfolio{
+  padding: 1em;
+}
+  div#blog{
+  margin-top:3.5em;
+    padding:1em;
+}
+div#contact{
+  padding:1em;
+}
+div.about-text p.heading{
+  font-size: 25px;
+  font-family: Lobster, cursive;
+}
+div.about-image img{
+  width:100%;
+  height: 400px;
+}
+textarea{
+  width:250px;
+}
+}
